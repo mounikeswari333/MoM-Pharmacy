@@ -1,0 +1,375 @@
+.buy-page {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.quick-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 28px 24px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.quick-card {
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.quick-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.38));
+}
+
+.quick-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.quick-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.card-one {
+  border: 1px solid #82dcd2;
+  background-image: url("https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=1200&q=80");
+}
+
+.card-two {
+  border: 1px solid #bbb5e5;
+  background-image: url("https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80");
+}
+
+.card-three {
+  border: 1px solid #fdc97a;
+  background-image: url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80");
+}
+
+.card-four {
+  border: 1px solid #f67bb8;
+  background-image: url("https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80");
+}
+
+.offers-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  padding: 28px 24px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 0;
+}
+
+.promo-card {
+  margin: 0 !important;
+  background: linear-gradient(100deg, #0a0e13, #1f2835 45%, #77774d) !important;
+}
+
+.promo-card h3 {
+  margin: 0 0 10px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.promo-card p {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.offer-card {
+  background: linear-gradient(135deg, #e8f5f0, #dff3e8) !important;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #6aa6a1, transparent);
+}
+
+.offer-card::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9DIYO7GEgKRlgM8xCxtPFwl2YKyQUCMixuw&s");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: bikeRide 3.2s linear infinite;
+  opacity: 0.92;
+}
+
+.offer-card h4,
+.offer-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-card h4 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #083c3b;
+}
+
+.offer-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #1a2026;
+  font-weight: 500;
+}
+
+@keyframes bikeRide {
+  0% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(360px);
+  }
+}
+
+.buy-page h2 {
+  margin: 0;
+  padding: 24px 24px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #083c3b;
+  width: 100%;
+}
+
+.buy-search {
+  width: calc(100% - 48px);
+  max-width: 700px;
+  border: 1px solid #bed8d5;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  margin: 16px 24px;
+  display: block;
+}
+
+.buy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0 24px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.loading,
+.no-results {
+  color: #4b6d6b;
+  font-weight: 600;
+  padding: 0 24px;
+}
+
+.buy-page .middle-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 28px 24px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.buy-page .banner-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 240px;
+}
+
+.buy-page .banner-one {
+  background-image: url("https://i0.wp.com/instafuelwellness.com/wp-content/uploads/Shop-Banner-1600-500-1.jpg.jpeg?fit=1600%2C500&ssl=1") !important;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  border: 1px solid #b8e8e0;
+}
+
+.buy-page .banner-two {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRymeHyNYYRIBKQCcPXNDsiC2aMAASRpPpmHw&s") !important;
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc5ed;
+}
+
+.buy-page .banner-one::before,
+.buy-page .banner-two::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 60, 59, 0.78) 0%,
+    rgba(8, 60, 59, 0.62) 42%,
+    rgba(8, 60, 59, 0.35) 100%
+  );
+}
+
+.buy-page .banner-box h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.buy-page .banner-box p {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: #f0f6f6;
+  font-weight: 500;
+}
+
+.buy-page .banner-box button {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  border: none;
+  background-color: #ffffff;
+  color: #083c3b;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.buy-page .banner-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 168, 150, 0.3);
+}
+
+.consult-banner {
+  background: linear-gradient(100deg, #fbe2b8, #f8d9a5);
+  border-radius: 0;
+  padding: 32px 24px;
+  margin: 0;
+  width: 100%;
+}
+
+.consult-banner h3 {
+  margin: 0 0 10px;
+  font-size: 44px;
+  color: #1a2026;
+  font-weight: 700;
+}
+
+.consult-banner p {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.consult-banner button {
+  border: none;
+  background-color: #1d2228;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.consult-banner button:hover {
+  background-color: #00a896;
+}
+
+@media (max-width: 1000px) {
+  .buy-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quick-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .middle-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .buy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-box h3 {
+    font-size: 24px;
+  }
+
+  .consult-banner h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .buy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-box button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,245 @@
+.premium-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.premium-page > section > h3 {
+  font-size: 28px;
+  margin: 20px 0 16px;
+  font-weight: 700;
+}
+
+.premium-slider {
+  background: linear-gradient(100deg, #0b0f16, #1d2632 44%, #7b774f);
+  border-radius: 18px;
+  color: #ffffff;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.premium-slider h2 {
+  margin: 0 0 10px;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.premium-slider p {
+  margin: 0 0 14px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.slide-nav {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.88);
+  transition: all 0.2s ease;
+}
+
+.slide-nav:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
+
+.slide-content {
+  flex: 1;
+}
+
+.slide-cta {
+  background-color: #d8b75d;
+  color: #1c1c1c;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.slide-cta:hover {
+  transform: translateY(-2px);
+}
+
+.health-needs-row {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.need-card {
+  min-width: 175px;
+  background-color: #ffffff;
+  border: 1px solid #dde8e7;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.need-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.need-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.need-card p {
+  margin: 10px 0 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.active-need {
+  border: 2px solid #00a896;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.brand-logo-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(110px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.brand-logo-card {
+  border: 1px solid #dde8e7;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.brand-logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.brand-logo-card img {
+  width: 100%;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brand-logo-card p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1b2e2d;
+  text-align: center;
+}
+
+.filter-row button {
+  border: 1px solid #00a896;
+  background-color: #ffffff;
+  color: #00a896;
+  border-radius: 20px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.filter-row button:hover,
+.active-filter {
+  background-color: #00a896 !important;
+  color: #ffffff !important;
+}
+
+.premium-section-box {
+  background-color: #ffffff;
+  border: 1px solid #dde8e7;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.premium-section-box h3 {
+  margin: 0 0 14px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.premium-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.loading,
+.no-results {
+  color: #4b6d6b;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .premium-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .premium-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brand-logo-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .premium-slider {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .premium-slider h2 {
+    font-size: 30px;
+  }
+
+  .premium-slider p {
+    font-size: 16px;
+  }
+
+  .premium-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-logo-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .need-card {
+    min-width: 160px;
+  }
+
+  .need-card img {
+    height: 105px;
+  }
+}

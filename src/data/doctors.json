@@ -1,0 +1,232 @@
+{
+  "specializations": [
+    {
+      "id": "general",
+      "name": "General Physicians"
+    },
+    {
+      "id": "dermatology",
+      "name": "Dermatology"
+    },
+    {
+      "id": "cardiology",
+      "name": "Cardiology"
+    },
+    {
+      "id": "pediatrics",
+      "name": "Pediatrics"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Dhanraj K",
+      "specialization": "general",
+      "experience": "25 Years",
+      "degree": "MBBS, MD Internal",
+      "location": "Hyderabad",
+      "hospital": "Apollo Hospitals, Jubilee Hills",
+      "distance": "6 KM",
+      "rating": 91,
+      "patients": "425+",
+      "fees": 1000,
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8SEhUSEg8VFRUVFRUVFRUVFRUVFRUVFxUXFhUVFRUYHikgGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGRAQGy0eHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS01Ky0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOcA2gMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQMEBgIFB//EAEgQAAEDAgMDBgcMCgEFAAAAAAEAAhEDIQQSMQVBUQYTImFxgTJSc5GS0vAUIzNCYnKCk6GxssEHFRYXU6KzwtHhJENjg+Lx/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECBAUDBv/EACsRAAICAQIFAwQCAwAAAAAAAAABAhEDBDESFCFRYRNBkQUVMnEj8EJSof/aAAwDAQACEQMRAD8A2wC6IAQLJFbhxhQiEIQAumU54d65U1N4iJjXjvjeN9kKiNzIXMKSq+fb29guEI/AoRCaEAoTDRqmAkhRIhCFaIEJtbKSkouA16vsM3RhCdTjh3LhTPeIiZ854bz2KFRFfgIRCaStECEw0IAQSoEIoQhWgCYEpLum6CCowBpHq9vvXCsc4BvnTSd0bjpp9qrqIskvYYQkE1SAkhNACSE1QJNCSAEwhJAdEpIQgBJCaAEIQgEmhJACaEkAyUkJoAQkmgBCEIBJoSUABNNrCfaPvSc0jVACEJKgE0IQAhOAkgBJNJANJNrSdEPEa+eRHnUMqBJZvGcrqYJFKmakfGLsjT80wSe2FXp8sHT0sOI+TUv5iz815vNBe5srRZ2rUTWJrzdmbboVjla4tf4j7O7tzu4lejK9FJPqjXnCUXUlQ0JgJEqmNAkhNCAhAC6LCPYFAcoQhKIJNCEKCEwE7KWKJKbrC+nYDrMiVxVcN3t7GfOownCUW+lCQmkhBpxxSCCVQBKSaEAJITUKSUiII6we3Xj2grG8rtrucX0mvMN6Ja0xmPxsxGu9saXWtXzPHA87VG81avnNRy19Q2l0Ol9Ogpzd+yK4qDcRfzpGoBrI+7zr61h8DRYzm2U2hniwIPEkbyeJXm4vkrg6hnIWH5BgeiZA7guasqO+4s+bGrPg3NriRHXPEdV19D5NY01qIc4y5pLHniRBB7wQT1yo8TySwzaVTK1znZH5SXGzspiwgG/FUuRTiab+Ac0COpg/KFtaWdypHM+pQXp8T3RpSUkJroo4IJITCEOqRvwsRPCVK5w/wLddrbtFAkpRVKgTQkqQEwEIJQDngkkmoACEk1QCEIQAUIQgBCEIBJpIUKBWWwezf+exzxLagdiAOB6RAPEh0O8y1SiwrWZ2hzOmwObTfHxDfLO4wBY6xI3rU1fFwdDqfTJRWRpvq9jxtqbK9/YH7Sx7XVnP5sUnNbSYGjPlIbTgCLDNrHatDSpObTbTdWcXZcgqkNzl2U9MgDLmtOkWVhRVj4PEOFuogtJPYCT3Ll3Z3eGjNbO2YTXeG7Tx5fRczOKuQ0XZhnygGmAQRrlMiV1yUZlpvGWJqPcPmyWNPmYtM98AngJ8y83BUoaDliQ2BpAA++ZPetzRtudnN+pcMcVPeyykmhdRHABCEIQEIQgEmiEIAQkmgBEoQoBLqEmhBKFAoSQqQaAJ0CFPS0t1zr1RMbtUfQqVkBCJUtY6cfu6vbrUKllaoE0JIQairmBnGrSHD7iO8EjvUlu5ZantDGYs+6KQDMA2qaTHm9TEvZJJFujRlpEi5I6yBhPquHue2FNS4u3U2IdnbLT2ajQ3Bi40g79VYe+jl6NKpm4GocgPEuzSW909QXm4asKkupnK62Zjvskd1nDhviBTx+P2g21LZ7ajtzvdDG0x1kuAd3ZVxknFtNfJ9Q3GaUk3Xj3L+KMNDJJLhBJicvxnGNJ07SkFiMMNrUKtSu8MxlR4Br0aUjmqdPMQ3DE+EWh7iWxcmJJkrY7C2lRxNJtai/M14BBGuvSaRucLiF0tNBQh5ZwtfOWTJ4XQnLSNQhTVDa/mv1bj3qBbSOe1QJoSVMRoAQAmepCoRQhCEBCF1RiRPtwQI5LTwSVrt75m+kzx3+ZVVEyyVDlASCapAQkmgGkhChRJoXD3Ruk2AA1JJgAdZJA70KkI1BIAkk6NAJceMNFz3L0cLsPEPu4Ck35XSd6DTA7zI4L18DsVrKcW50w41Bch40y/JEkRoQTPhGfQwlbOwOIg3Dhwc0lrhO8SDdeEsr9jehpor8jD/pIwVPC7MxFRsuqZIa95nKSfCa0dFpF7gStDgtgsbs+ng2wAyhTY0kaPYAWvPE5wHFeV+l/DF+ycTBjIzPpMgajW1jr1LQ4LG1Hc2DTbDmB8teXFrYsSCwRJsL8eBXnbuzY4VVHz1sgg3a9sj5THaOae8QQbWU9TbL3DJGV+hePBtqGT8fqOl9YVvldgH08SXNMU6wz9Ye2BUDe2WGeLna7vK5lsZYtwW88OPOlOS6nNWoy6ZyxxfR/2/wBnu8iqP/IJGjaTh3ueyD/K5ec7AUMFtjmHUh7n2k11WnHRNLF04FUMc2HBrwWEwdSNAva5AYYg13l0zzTB1Bud0Hr6evYvI/SXii1+BfUbTpmnj2MzOeTNCs19Ko8WbaHNJh1vMTrZ3/Izc06/iRo8XyceL0qub5NSx7ntGnaCeteRVa5jslRpY4gkNdFwNS0gkOFxobSJhbiiZaDmzWHSEQ62ojivP2hgm1nuY7dTBB3tcXOyuHWMvfcGxWMcjQnp4y26GXlC5ZNw4Q5pLXDcHNJDo6pBuu1sWc9qhykkmqYjSlJCAYQUIQCQnCSgGEICFQCSZSQAmhJQoFXtgYfnK4J0pDOfnGWs7dHnqLWqlC0fJihlo599Ul/0bBnnaGntcV55HSNjTwuV9j11VoWq1G7nBj+8gsIHVDG+dWlVqD35nk6v4qX+1rnQPO5b4Y1NnYxg1dha4Hzuadl+2FX5AYoVMDh3u+Efh6D3zvmm2C35NoHYZvJU/Ksu5trR4LiQ7fmMWaQbEHpGDYlrRvg+Fs6uyk4udVFJjBZ72im0F7qbGZ2Q0Q55c2IbmjixrgBoeVWC53DkgS6mecbxMA5hG8lpdA4wsJK+mYXEZpBGVzbObMweIO9p3H7jIHz3a2C5is+lEAHMzybrtjqF2/QW7pJ7xOfrse00afkTTig93j1XO8zWs/sKx3JLYmH2oDtHGUxXqYqtUNFtUZmYfB0amUMbTNrloBOvvk8Sd3yZogYOmDo5r3T1Pc58+Zy8/wDRxs1tDAUWNfmADmtcYnIKjy0GLHwiZ+UtXI7k35N3Eqgl4PK5OYb9W7Tds+mT7kxNF2IwzHOJFGsx0VqVOb5CHB8TY9pK2dP4Z/k6X4qq8TbuzWv2js+uXODqPusACIcKlENObsgL26Xwz/J0vxVf8rAzM7ygoZK5O6q3N9JkMd2W5v7VQWj5UYfNRz76Tg/6PgvnqDSXfRCzgWzjdo5+pjU77jQkhehrDQhCASaEIAQgBPL7WUBNSMAdfXF549m5c1/b/fXqO5RscRoSOxJQrl0oEkykqQEwEBBKGSEaRqObTFi9wYI1APhOHWGhzvordMaAAAIAEADcBoFmOTVDNWc86U22+c+0jrDWn01qFr5HbOhp41G+4KrVPvzB8iqf5qY/NWlUF65+RTEf+Rxn+k3zrzPcpUxWqNfJcQalVsTRjK2o9oEFnAAXleLyuwzm4RwghpfTke9ASXACcrBvj7FqNnDokf8Acq/bVefzVkgKp07I1ao8qhSqlzzmOdhGXMWwWkSWOLGjok74JBvfQ+PyyY19IYkCDSJZVB8JoMWcBqQ7LG6HkixlaWh8JU+h+FQ7TwIqNdAnM0se23vjCCC0zaRJgnQ9RKsJOMk0ScFOLiyOhRIp0sP4tNnOdTGgDL9IiOsB/BR7EdldXpHVlQuA3BjxLAPN9qn2Q4vpc4T06l3GCMrh0coa64yxEHfPErObM2NtejBq4uniKgJArGnlmnqG1GAga3te8XhpGJke7X6eLpj+Ex75+f0MvboVco/C1Pm0/wC9ZbE7I2q5zXsxdPDDnRUxDsoqOfTbpTBNg3UTY9gAavN2vtA4is6o1zhTgNY2SA4NLjzhHE5jroI0MrGc1FHpjxubpG+xtWk1h51zWsIyuL3BrYNoJPFfOv1vhWS12Loy0lpJq0xmyktza74nvVLGYCnVyio1r2h2Yte0PBOUgRm0InX/ACo3bHw0ENoUmncRSpyPOIWEdSo+xll0HGurNDg67HgOY5r2kEtLSHNdwgixVkukG8jjM8fMbLNHCsBDWU2Zj4MNEDi624a/7IXtYenlaGyTG8795PebraxZXk61RztTp1gqPFbO0JwhbBosEITmEALlCagAISCaAEk0lQCChQ4wxTeZiGuvwsbqGSNZyZoZaAdvqE1O0OgM/kDFYr4qo0FxZTa0b6lXL9zSPtVoMhsNgQIbaQLWtwUNDBNBzu6b/HdcidQ0aMHUNd8m602dZKlRXpbXaTBpVRwdzb3MPY9gIjthS7NcHNdVBkVHZmkGQWABrCDwIaHfSVxVn4CkSSG5STJLHOpkni4sInvQpyWVGOcWAOa45iC7KWugAxYggwDugzrNnztb+E3vqf8Aqj3K4eDWqAcDkcO8uaXHzrP4flTVdUfTbSY8NJipmdTBAOUHJDtSHEGbgI+ib9kF1ait2aPC0nDM50ZnmTGgsAGgm5gDXeZ00EO08NUeBkflgO+M5kEjovlvhZb9E2M30C8DEYitUPTquA3Npk02jvBzHvMdQUVLa1elq9wA/ixUZ3vBzDtcR+S8OYjZsvSzqzTbM8A+Vrf1nq2vN2FiQ9jho8PqFzJktz1HOaZ3gg2PURqCBFyj2v7npw2DVfIYOEeE8jgJHaSBvle3Eqs8OF3w+55PK7auYnDMNhHPHjvFL7i7qgXkxngk0cTJMkk3JJMkk7yTeUqjwASdACT2C5WnOfE7OljxqEaOiuHvAE+3cuhh6hJzsqMbAu3mje8zd1hbQcVNSwlMS8ufUDWuJZUblMR4TYa0h4vlNwDeJAIwVX1M5XTpEmBoEDM4dI/yjc3/AD19QCtLmmCJa7Vpc124FzSWkjqkFdrtQSSSR8pklKUm5bhKEk1meQISTQCTQiEAl0Ak0JuKARSQhBY1y9siDodU1NSaImJ169I3cbrFmSNHsHHCrSAJ6bAGvG+RYP7HRPnGoK9JYisyCHNJa4aOaS0x2g20uNDZWsPtzEs1Lag+UMrj9Jth6K8Hjfsb0NQtpGtQvBp8p2f9Sk9vW2Ht+whx9Fep+sKQ8J2TygdTnszgT3LBprc94yUtiPbmJNPD1XtMOFN2X55EN+0hYjk81vvgESHNbG8MDGltuEuctht6nz2Hc1jx0nUxm8IAc6yTY3ESvG2DyZAquqVclRgLmtEZszwAxziHCwGVwjfr2pRjLE43TtFhOUM0Z1ap/wDSvjK7QC3NTk/Fe4AEbweruVE1Ob1HNHd0s2HdPxZ+JMi8NMn42h39DDU2DKxjWjg1oaPMFCNmYfNmFFgcDMhoFxoTGp61qct5N7nPBnuTT6VKhUxT5DAXNZLg6GhwaWMAJkc40ht+AAA18DFYp9ao6q/wnaDcxo8Fg7JN95JO9d7Y2sKjzSztyUqtaBI6TzVfLj2AwB2neIWFbmvE6RYkXMTbck3/AIoyxJdZy3ZEo67SWwNZaRMfFcDFweHAq9Uw7yJFCr3UX9XiiN/2KtXw1drS40KgFhLmOaJJDRJItchefBL2R7PJCurFhyx3RaxoPxmM95eRBtlnK8b5zRaFexFQtaKeYudUcAM0ZmtJAceiALCYPEjVc4TDM5s0KjhD3B4qHRlYDLfgxwgDgQNSZVhmyHYY89Wy9EjI3NmdVqC7GzrE3JOgBOkrbhpFacnt7HOn9Qbi1jjv79v2dYhwNWqRpztQd4eWn7QVyAo6LSAATJ3nid57zJUui3l0VHFk+KTYikhCyMGCaS7pNkgIDhCs5QbRw3cY0O/UaqsoitUOUJBNUgJJpIAXTXkf4IlJJSi2dFxKSAhQEdQafOb+ILfLBuElgmJqUhPCajRN1s/c9T+O/wBGn6q8cu5vaX8WKtgKL5L6LHSIMsaSR1khWGMAAAAAAgAWAA0ACg9z1P47vRp+quWZ21GtNQuBY83DRdpYBEAeMV5G0W1S2nXqsA5tsm/xXPkgdFkNIyzfpGwi+quoQFXZ3gHylb+q9WlWwHgnylX+o5WUAoXn8oR/xqp8Vhf6HS/tXeFbUexrjWcJEwGsgdQlqi2phHuo1W884zTeIineWkeKhHsZYCVwyg0RDQIEC2g4DgOpdsMiV0tw5IxZJCSIg0ISVINGiEIDo1D/APABPmXCEILAJpBChBoQkqUEJpIATQAhQoM8On5aj/VYt0sPhh75T8rT/G1bha+Xc39L+L/YKrU+GZ5Or+KkrSq1Ph2eTq/ipLzNktKDFYtlO7id5s1zjAuTDQSAOPWOIU6hxGGZUEPbPn3iCDGoI1GhQEezz0XeUqfjKtKrgNHeUqfiKtICts/wOxzx5nuH5Kw5sgjjZVtnnoHylb+q9WggPn2C+DZxyt+4KZcUhEt8Ulvokt/JSLbRyJbsSaElkYgmhJACEJoAQknCgJKbBAJ39vGBYalc1Wgae3tIWHbyvxQERT9F35OSdytxR/h+ifWWxy0zyeohRtkLGUOUeNfmyMYcrS50NNmjU+Eov2rxXCn6J9ZOXmY+vE3CYCw37V4rhT9E+sn+1mK4U/RPrK8tMevA3JK5WI/avFcKfon1kv2rxXCn6J9ZTlpl5iJvMI4CtSJmM+5pcbNc6zWgk6LWfrGn4tX6mt6i+NUeV2Ka9lQCnLCSJaYktcy/S4OK9H95O0OFH6t3rryno8jfSjbwa7FCNOz6qMezxan1Nb1UUAXPzlpAAytB1gkFxI3TDbdXXC+VfvI2hwo/Vu9dH7yNoeLQ+rd66w5HL4PX7jh8/B9fQvkH7ydocKP1bvXR+8naHCj9W7105HL4H3HD5+D6tgNH+Uf+JWV8dp/pEx7ZgUbknwHan6a7P6SNocKP1bvXTkcvgfccPn4PqDXGmXAtcWFxc1zWl5Bcczmua2XeEXEECIMWi8n6xp+LV+oreovlf7ydocKH1bvXR+8naHCj9W7105HL4H3HD5+DRAy6oRMGrWNwWm9V5uDcarpYl/KzFOcXRTlzibMOpM26SZ5TYy/QbbX3t1u29l7rTTSNGeog22jbsE9wJ8yldTF7XHb+euiwzeUmOF+ab9U+OzVDuVWN8RgvHwb9eF3dtk5efgLPCuqNkhYk8qcWLlrACJByOuJiddJR+1OLicrIJgHI6CeEzqry0zD14m2QsOeVeK4U7a9E2/mTdyqxQ1FMdrHD+5OWmPXibkWSzHisOeVmK4U76dE33eN1I/avFcKfon1k5aZeYiefhto5KfN8zTd0w8lzZJjceIguH0jEKcbYaDIwtD4+rGnw3ZtIi2gtYaQhC3nCLNRZJI5pbXytyihTgEES28ZWAg+MDkBM6klP9btzZjhaNnF0BjQLtDYiNBBIGkmYMIQpwRL6ku46+2Q5hZ7loNkEFzWAO8GJBiRBuOwary0IWSilsYyk5bghCFTEEIQgBCEIAQhCAEIQgBCEIDqm8tIcDBBBB4EGQrn64xEuPOXccx6LNcuThbo2QhRxT3RkpSWzAbYxGbOHgO4hrBx3RG93pHiVw/adZ2r56RdcN1Mg7vlG3+AhCnBHsX1J92d0dr4hogVLREEAgWIBFrG+vUF03bWJEkVNTJ6LNbdVvBCEJwR7D1J938jO3MSRHOCIiMjI0jSF0zb2JH/UBtAlrZHCCBNt0pIU9OHZF9Wf+z+SLEbVr1Glj3y0xbK0aEEaDiAqSELJJLYwcm93Z//Z"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Suresh Reddy",
+      "specialization": "general",
+      "experience": "18 Years",
+      "degree": "MBBS, MD",
+      "location": "Hyderabad",
+      "hospital": "Care Hospitals",
+      "distance": "4 KM",
+      "rating": 89,
+      "patients": "300+",
+      "fees": 800,
+      "image": "https://www.google.com/imgres?q=doctor%20professional%20image%20not%20real%20images%20cartoon&imgurl=https%3A%2F%2Fmedia.easy-peasy.ai%2Ffffd9126-dda4-430c-a18d-fb33c6493c57%2F3bab276f-7f4a-4d21-b1bf-082812d8744f.png&imgrefurl=https%3A%2F%2Feasy-peasy.ai%2Fai-image-generator%2Fimages%2Ffriendly-middle-aged-caucasian-doctor-cartoon-illustration&docid=NfO2y52YILc_FM&tbnid=Rt4wK2duTrBeKM&vet=12ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB..i&w=2048&h=2048&hcb=2&ved=2ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Anjali Sharma",
+      "specialization": "general",
+      "experience": "12 Years",
+      "degree": "MBBS",
+      "location": "Hyderabad",
+      "hospital": "Yashoda Hospitals",
+      "distance": "5 KM",
+      "rating": 93,
+      "patients": "350+",
+      "fees": 700,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Meera Nair",
+      "specialization": "dermatology",
+      "experience": "15 Years",
+      "degree": "MBBS, MD Dermatology",
+      "location": "Hyderabad",
+      "hospital": "Apollo Skin Clinic",
+      "distance": "3 KM",
+      "rating": 95,
+      "patients": "500+",
+      "fees": 1200,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Rahul Verma",
+      "specialization": "dermatology",
+      "experience": "10 Years",
+      "degree": "MBBS, DDVL",
+      "location": "Hyderabad",
+      "hospital": "Skin Care Clinic",
+      "distance": "2 KM",
+      "rating": 90,
+      "patients": "280+",
+      "fees": 900,
+      "image": "https://www.google.com/imgres?q=doctor%20professional%20image%20not%20real%20images%20cartoon&imgurl=https%3A%2F%2Fmedia.easy-peasy.ai%2Ffffd9126-dda4-430c-a18d-fb33c6493c57%2F3bab276f-7f4a-4d21-b1bf-082812d8744f.png&imgrefurl=https%3A%2F%2Feasy-peasy.ai%2Fai-image-generator%2Fimages%2Ffriendly-middle-aged-caucasian-doctor-cartoon-illustration&docid=NfO2y52YILc_FM&tbnid=Rt4wK2duTrBeKM&vet=12ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB..i&w=2048&h=2048&hcb=2&ved=2ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Sneha Gupta",
+      "specialization": "dermatology",
+      "experience": "8 Years",
+      "degree": "MBBS, MD",
+      "location": "Hyderabad",
+      "hospital": "Oliva Clinic",
+      "distance": "6 KM",
+      "rating": 92,
+      "patients": "260+",
+      "fees": 850,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Dr. Kiran Patel",
+      "specialization": "dermatology",
+      "experience": "20 Years",
+      "degree": "MBBS, MD",
+      "location": "Hyderabad",
+      "hospital": "KIMS Hospital",
+      "distance": "7 KM",
+      "rating": 94,
+      "patients": "600+",
+      "fees": 1300,
+      "image": "https://www.google.com/imgres?q=doctor%20professional%20image%20not%20real%20images%20cartoon&imgurl=https%3A%2F%2Fmedia.easy-peasy.ai%2Ffffd9126-dda4-430c-a18d-fb33c6493c57%2F3bab276f-7f4a-4d21-b1bf-082812d8744f.png&imgrefurl=https%3A%2F%2Feasy-peasy.ai%2Fai-image-generator%2Fimages%2Ffriendly-middle-aged-caucasian-doctor-cartoon-illustration&docid=NfO2y52YILc_FM&tbnid=Rt4wK2duTrBeKM&vet=12ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB..i&w=2048&h=2048&hcb=2&ved=2ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB"
+    },
+    {
+      "id": 8,
+      "name": "Dr. Arjun Rao",
+      "specialization": "cardiology",
+      "experience": "22 Years",
+      "degree": "MBBS, DM Cardiology",
+      "location": "Hyderabad",
+      "hospital": "Care Hospitals",
+      "distance": "5 KM",
+      "rating": 96,
+      "patients": "700+",
+      "fees": 1500,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Dr. Neha Singh",
+      "specialization": "cardiology",
+      "experience": "14 Years",
+      "degree": "MBBS, DM",
+      "location": "Hyderabad",
+      "hospital": "Apollo Hospitals",
+      "distance": "4 KM",
+      "rating": 93,
+      "patients": "420+",
+      "fees": 1300,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Dr. Rakesh Kumar",
+      "specialization": "cardiology",
+      "experience": "17 Years",
+      "degree": "MBBS, MD",
+      "location": "Hyderabad",
+      "hospital": "Yashoda Hospitals",
+      "distance": "6 KM",
+      "rating": 91,
+      "patients": "380+",
+      "fees": 1100,
+      "image": "https://www.google.com/imgres?q=doctor%20professional%20image%20not%20real%20images%20cartoon&imgurl=https%3A%2F%2Fmedia.easy-peasy.ai%2Ffffd9126-dda4-430c-a18d-fb33c6493c57%2F3bab276f-7f4a-4d21-b1bf-082812d8744f.png&imgrefurl=https%3A%2F%2Feasy-peasy.ai%2Fai-image-generator%2Fimages%2Ffriendly-middle-aged-caucasian-doctor-cartoon-illustration&docid=NfO2y52YILc_FM&tbnid=Rt4wK2duTrBeKM&vet=12ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB..i&w=2048&h=2048&hcb=2&ved=2ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB"
+    },
+    {
+      "id": 11,
+      "name": "Dr. Kavya Reddy",
+      "specialization": "cardiology",
+      "experience": "9 Years",
+      "degree": "MBBS, DM",
+      "location": "Hyderabad",
+      "hospital": "KIMS",
+      "distance": "3 KM",
+      "rating": 92,
+      "patients": "310+",
+      "fees": 1000,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Dr. Priya Nair",
+      "specialization": "pediatrics",
+      "experience": "16 Years",
+      "degree": "MBBS, MD Pediatrics",
+      "location": "Hyderabad",
+      "hospital": "Rainbow Children's Hospital",
+      "distance": "4 KM",
+      "rating": 95,
+      "patients": "550+",
+      "fees": 1000,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Dr. Rohit Sharma",
+      "specialization": "pediatrics",
+      "experience": "11 Years",
+      "degree": "MBBS, DCH",
+      "location": "Hyderabad",
+      "hospital": "Apollo Children's",
+      "distance": "5 KM",
+      "rating": 90,
+      "patients": "300+",
+      "fees": 800,
+      "image": "https://www.google.com/imgres?q=doctor%20professional%20image%20not%20real%20images%20cartoon&imgurl=https%3A%2F%2Fmedia.easy-peasy.ai%2Ffffd9126-dda4-430c-a18d-fb33c6493c57%2F3bab276f-7f4a-4d21-b1bf-082812d8744f.png&imgrefurl=https%3A%2F%2Feasy-peasy.ai%2Fai-image-generator%2Fimages%2Ffriendly-middle-aged-caucasian-doctor-cartoon-illustration&docid=NfO2y52YILc_FM&tbnid=Rt4wK2duTrBeKM&vet=12ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB..i&w=2048&h=2048&hcb=2&ved=2ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB"
+    },
+    {
+      "id": 14,
+      "name": "Dr. Kavitha Rao",
+      "specialization": "pediatrics",
+      "experience": "13 Years",
+      "degree": "MBBS, MD",
+      "location": "Hyderabad",
+      "hospital": "Yashoda Hospitals",
+      "distance": "3 KM",
+      "rating": 92,
+      "patients": "400+",
+      "fees": 900,
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doctor-working-laptop-office-setting-medical-professional-healthcare-concept-image-387673335.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Dr. Amit Verma",
+      "specialization": "pediatrics",
+      "experience": "7 Years",
+      "degree": "MBBS",
+      "location": "Hyderabad",
+      "hospital": "Sunshine Hospital",
+      "distance": "2 KM",
+      "rating": 88,
+      "patients": "250+",
+      "fees": 700,
+      "image": "https://www.google.com/imgres?q=doctor%20professional%20image%20not%20real%20images%20cartoon&imgurl=https%3A%2F%2Fmedia.easy-peasy.ai%2Ffffd9126-dda4-430c-a18d-fb33c6493c57%2F3bab276f-7f4a-4d21-b1bf-082812d8744f.png&imgrefurl=https%3A%2F%2Feasy-peasy.ai%2Fai-image-generator%2Fimages%2Ffriendly-middle-aged-caucasian-doctor-cartoon-illustration&docid=NfO2y52YILc_FM&tbnid=Rt4wK2duTrBeKM&vet=12ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB..i&w=2048&h=2048&hcb=2&ved=2ahUKEwjqu5SAjMyTAxVGXGwGHd4SG3oQnPAOegQIGBAB"
+    }
+  ]
+}

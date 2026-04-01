@@ -1,12 +1,12 @@
 .doctors-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 18px;
 }
 
 .doctors-page h2 {
-  font-size: 32px;
-  margin-bottom: 16px;
+  font-size: 28px;
+  margin-bottom: 14px;
 }
 
 .doctor-top-banner {
@@ -29,21 +29,11 @@
   font-weight: 500;
 }
 
-.doctor-search {
-  width: 100%;
-  max-width: 700px;
-  border: 1px solid #bed8d5;
-  border-radius: 10px;
-  padding: 14px 16px;
-  margin-bottom: 18px;
-  font-size: 16px;
-}
-
 .speciality-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .speciality-row button {
@@ -53,6 +43,13 @@
   border-radius: 20px;
   padding: 8px 12px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.speciality-icon {
+  display: inline-flex;
 }
 
 .speciality-row button:hover,

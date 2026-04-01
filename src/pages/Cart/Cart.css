@@ -224,14 +224,14 @@
 }
 
 .remove-btn {
-  width: 30px;
+  min-width: 68px;
   height: 30px;
   border: none;
   background: #ffebee;
   color: #c62828;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   transition: all 0.2s;
   display: flex;

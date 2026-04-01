@@ -1,14 +1,23 @@
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import ProductCard from "../../components/ProductCard";
 import medicines from "../../data/medicines.json";
 import "./BuyMedicines.css";
 
+const HOME_FEATURED_KEY = "homeFeaturedProductIds";
+
 function BuyMedicines() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const [searchText, setSearchText] = useState("");
   const [loading, setLoading] = useState(false);
-  const medicineList = Array.isArray(medicines) ? medicines : medicines.products || [];
+  const medicineList = Array.isArray(medicines)
+    ? medicines
+    : medicines.products || [];
+
+  useEffect(() => {
+    setSearchText(searchParams.get("q") || "");
+  }, [searchParams]);
 
   useEffect(() => {
     setLoading(true);
@@ -18,11 +27,27 @@ function BuyMedicines() {
 
   const filteredMedicines = medicineList.filter((item) => {
     const text = searchText.toLowerCase();
-    return (
-      item.name.toLowerCase().includes(text) ||
-      item.category.toLowerCase().includes(text)
-    );
+    return item.name.toLowerCase().includes(text);
   });
+
+  const featuredMedicines = useMemo(
+    () => filteredMedicines.slice(0, 8),
+    [filteredMedicines],
+  );
+
+  const carouselMedicines = useMemo(
+    () => [...featuredMedicines, ...featuredMedicines],
+    [featuredMedicines],
+  );
+
+  const handleProductOpen = (item) => {
+    const previous = JSON.parse(
+      localStorage.getItem(HOME_FEATURED_KEY) || "[]",
+    );
+    const withoutCurrent = previous.filter((id) => id !== item.id);
+    const next = [item.id, ...withoutCurrent].slice(0, 8);
+    localStorage.setItem(HOME_FEATURED_KEY, JSON.stringify(next));
+  };
 
   return (
     <div className="buy-page">
@@ -58,27 +83,25 @@ function BuyMedicines() {
         </div>
       </section>
 
-      <h2>Search & Browse Medicines</h2>
-      <input
-        type="text"
-        placeholder="Search medicines by name or category"
-        value={searchText}
-        onChange={(e) => setSearchText(e.target.value)}
-        className="buy-search"
-      />
+      <h2>Premium Picks</h2>
 
       {loading && <p className="loading">Loading medicines...</p>}
 
-      {!loading && filteredMedicines.length === 0 && (
+      {!loading && featuredMedicines.length === 0 && (
         <p className="no-results">No results found</p>
       )}
 
-      <div className="buy-grid">
-        {!loading &&
-          filteredMedicines.map((item) => (
-            <ProductCard key={item.id} item={item} />
-          ))}
-      </div>
+      {!loading && featuredMedicines.length > 0 && (
+        <section className="premium-carousel-container">
+          <div className="premium-carousel-track">
+            {carouselMedicines.map((item, index) => (
+              <div className="premium-slide" key={`${item.id}-${index}`}>
+                <ProductCard item={item} onOpen={handleProductOpen} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="middle-banner">
         <div className="banner-box banner-one">

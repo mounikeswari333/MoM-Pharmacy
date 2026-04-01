@@ -1,14 +1,20 @@
 import { useNavigate } from "react-router-dom";
+import { FaMinus, FaPlus } from "react-icons/fa";
 import "./ProductCard.css";
 import { useCart } from "../context/CartContext";
 
-function ProductCard({ item }) {
+function ProductCard({ item, onOpen }) {
   const navigate = useNavigate();
-  const { addToCart } = useCart();
+  const { addToCart, cartItems, updateQuantity } = useCart();
   const hasOriginalPrice =
     typeof item.originalPrice === "number" && item.originalPrice > item.price;
+  const cartItem = cartItems.find((cartEntry) => cartEntry.id === item.id);
+  const quantity = cartItem?.quantityInCart || 0;
 
   const openDetails = () => {
+    if (onOpen) {
+      onOpen(item);
+    }
     navigate(`/product/${item.id}`);
   };
 
@@ -36,19 +42,44 @@ function ProductCard({ item }) {
         {hasOriginalPrice && (
           <p className="original-price">Rs. {item.originalPrice}</p>
         )}
-        {item.discount && <span className="discount-badge">{item.discount} OFF</span>}
+        {item.discount && (
+          <span className="discount-badge">{item.discount} OFF</span>
+        )}
       </div>
 
       {item.quantity && <p className="product-qty">Qty: {item.quantity}</p>}
-      <button
-        className="add-button"
-        onClick={(event) => {
-          event.stopPropagation();
-          addToCart(item);
-        }}
-      >
-        ADD
-      </button>
+      {quantity === 0 ? (
+        <button
+          className="add-button"
+          onClick={(event) => {
+            event.stopPropagation();
+            addToCart(item);
+          }}
+        >
+          ADD
+        </button>
+      ) : (
+        <div
+          className="product-qty-controls"
+          onClick={(event) => event.stopPropagation()}
+        >
+          <button
+            className="add-button-icon"
+            onClick={() => updateQuantity(item.id, quantity - 1)}
+            aria-label="Decrease quantity"
+          >
+            <FaMinus />
+          </button>
+          <span className="add-button-value">{quantity}</span>
+          <button
+            className="add-button-icon"
+            onClick={() => updateQuantity(item.id, quantity + 1)}
+            aria-label="Increase quantity"
+          >
+            <FaPlus />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

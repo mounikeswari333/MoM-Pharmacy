@@ -1,9 +1,23 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useMemo, useRef, useState } from "react";
 
 const CartContext = createContext(null);
 
 function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
+  const [toastMessage, setToastMessage] = useState("");
+  const toastTimeoutRef = useRef(null);
+
+  const showToast = (message) => {
+    setToastMessage(message);
+
+    if (toastTimeoutRef.current) {
+      window.clearTimeout(toastTimeoutRef.current);
+    }
+
+    toastTimeoutRef.current = window.setTimeout(() => {
+      setToastMessage("");
+    }, 1800);
+  };
 
   const addToCart = (item) => {
     setCartItems((prevItems) => {
@@ -19,6 +33,8 @@ function CartProvider({ children }) {
 
       return [...prevItems, { ...item, quantityInCart: 1 }];
     });
+
+    showToast("Item added to cart 🥳");
   };
 
   const removeFromCart = (itemId) => {
@@ -43,7 +59,11 @@ function CartProvider({ children }) {
   );
 
   const subtotal = useMemo(
-    () => cartItems.reduce((sum, item) => sum + item.price * item.quantityInCart, 0),
+    () =>
+      cartItems.reduce(
+        (sum, item) => sum + item.price * item.quantityInCart,
+        0,
+      ),
     [cartItems],
   );
 
@@ -51,9 +71,11 @@ function CartProvider({ children }) {
     cartItems,
     totalItems,
     subtotal,
+    toastMessage,
     addToCart,
     removeFromCart,
     updateQuantity,
+    showToast,
   };
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;

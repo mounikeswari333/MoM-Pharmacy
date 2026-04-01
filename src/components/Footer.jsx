@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -35,7 +36,33 @@ function Footer() {
             <input type="email" placeholder="enter your email" />
             <button>submit</button>
           </div>
-          <div className="social-icons">follow us on • fb • in • ig</div>
+          <div className="social-icons">
+            <span>Follow us on</span>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Twitter"
+            >
+              <FaTwitter />
+            </a>
+          </div>
         </div>
       </div>
 

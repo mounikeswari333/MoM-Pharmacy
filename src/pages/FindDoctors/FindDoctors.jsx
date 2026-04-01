@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaBaby, FaHeartbeat, FaStethoscope, FaUserMd } from "react-icons/fa";
 import doctors from "../../data/doctors.json";
 import "./FindDoctors.css";
 
@@ -9,16 +10,18 @@ function FindDoctors() {
   const doctorList = Array.isArray(doctors) ? doctors : doctors.doctors || [];
   const specializationList = Array.isArray(doctors)
     ? [
-        { id: "general", name: "General Physician" },
-        { id: "dermatology", name: "Dermatology" },
-        { id: "cardiology", name: "Cardiology" },
-        { id: "pediatrics", name: "Pediatrics" },
+        { id: "general", name: "General", icon: <FaStethoscope /> },
+        { id: "dermatology", name: "Dermatology", icon: <FaUserMd /> },
+        { id: "cardiology", name: "Cardiology", icon: <FaHeartbeat /> },
+        { id: "pediatrics", name: "Pediatrics", icon: <FaBaby /> },
       ]
-    : doctors.specializations || [];
+    : (doctors.specializations || []).map((speciality) => ({
+        ...speciality,
+        icon: <FaStethoscope />,
+      }));
 
-  const [searchText, setSearchText] = useState("");
   const [selectedSpeciality, setSelectedSpeciality] = useState(
-    specializationList[0]?.id || "general"
+    specializationList[0]?.id || "general",
   );
   const [loading, setLoading] = useState(false);
 
@@ -26,18 +29,13 @@ function FindDoctors() {
     setLoading(true);
     const timer = setTimeout(() => setLoading(false), 450);
     return () => clearTimeout(timer);
-  }, [searchText, selectedSpeciality]);
+  }, [selectedSpeciality]);
 
   const filteredDoctors = doctorList.filter((doctor) => {
     const matchSpeciality =
       doctor.specialization === selectedSpeciality ||
       doctor.speciality === selectedSpeciality;
-    const text = searchText.toLowerCase();
-    const matchText =
-      doctor.name.toLowerCase().includes(text) ||
-      doctor.hospital.toLowerCase().includes(text) ||
-      (doctor.location || "").toLowerCase().includes(text);
-    return matchSpeciality && matchText;
+    return matchSpeciality;
   });
 
   return (
@@ -48,13 +46,6 @@ function FindDoctors() {
       </section>
 
       <h2>Find Doctors</h2>
-      <input
-        type="text"
-        className="doctor-search"
-        placeholder="Search doctors, hospitals, or location"
-        value={searchText}
-        onChange={(e) => setSearchText(e.target.value)}
-      />
 
       <div className="speciality-row">
         {specializationList.map((item) => (
@@ -65,6 +56,9 @@ function FindDoctors() {
             }
             onClick={() => setSelectedSpeciality(item.id)}
           >
+            <span className="speciality-icon" aria-hidden="true">
+              {item.icon}
+            </span>
             {item.name}
           </button>
         ))}
@@ -87,8 +81,10 @@ function FindDoctors() {
                 <p className="doctor-main">
                   {specializationList.find(
                     (spec) =>
-                      spec.id === (doctor.specialization || doctor.speciality)
-                  )?.name || doctor.specialization || doctor.speciality}
+                      spec.id === (doctor.specialization || doctor.speciality),
+                  )?.name ||
+                    doctor.specialization ||
+                    doctor.speciality}
                 </p>
                 <p className="doctor-exp">
                   {doctor.experience} • {doctor.degree || "MBBS, MD"}
@@ -97,7 +93,9 @@ function FindDoctors() {
                 <p>{doctor.location}</p>
                 <p className="doctor-meta">
                   <span>{doctor.distance || "-"}</span>
-                  <span>{doctor.rating ? `${doctor.rating}% Rating` : "-"}</span>
+                  <span>
+                    {doctor.rating ? `${doctor.rating}% Rating` : "-"}
+                  </span>
                   <span>{doctor.patients || "-"} Patients</span>
                 </p>
               </div>

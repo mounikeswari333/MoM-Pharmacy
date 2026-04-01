@@ -542,6 +542,84 @@
   box-shadow: 0 4px 12px rgba(0, 168, 150, 0.3);
 }
 
+.new-user-offer {
+  width: 100%;
+  padding: 0 24px 24px;
+  background: #f5f5f5;
+}
+
+.new-user-offer-content {
+  border-radius: 16px;
+  padding: 30px;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(255, 255, 255, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(120deg, #053b44, #047a77 55%, #23b59f);
+  box-shadow: 0 16px 30px rgba(4, 62, 67, 0.22);
+}
+
+.offer-tag {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #d8fff6;
+}
+
+.new-user-offer-content h3 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.new-user-offer-content p {
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: #ecfffb;
+}
+
+.new-user-offer-content button {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 20px;
+  font-weight: 700;
+  color: #053b44;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.new-user-offer-content button:hover {
+  transform: translateY(-2px);
+}
+
+.selected-products-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 0 24px 28px;
+}
+
+.selected-products-head h3 {
+  margin: 0;
+  padding: 8px 0 14px;
+  font-size: 28px;
+  color: #083c3b;
+}
+
+.selected-products-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.selected-products-row .product-card {
+  flex: 0 0 220px;
+}
+
 @media (max-width: 900px) {
   .quick-cards {
     grid-template-columns: 1fr 1fr;

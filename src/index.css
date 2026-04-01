@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans:wght@400;500;600;700&family=DM+Serif+Text:ital@0;1&display=swap");
+
 :root {
   --primary: #00a896;
 }
@@ -8,14 +10,29 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Albert Sans", "Alata", sans-serif;
   background-color: #f4f8f7;
   color: #172726;
 }
 
+h1,
 h2,
 h3,
 h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: "DM Serif Text", serif;
+}
+
+p,
+input,
+button,
+span,
+a {
+  font-family: "Albert Sans", "Alata", sans-serif;
+}
+
 p {
   margin-top: 0;
 }

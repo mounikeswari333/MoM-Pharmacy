@@ -25,8 +25,8 @@ function Cart() {
       {cartItems.length > 0 && amountNeeded > 0 && (
         <div className="delivery-banner">
           <p className="banner-text">
-            🚚 Add ₹<span className="amount-bold">{amountNeeded}</span> to save ₹
-            <span className="save-bold">{nextTier.save}</span> on delivery
+            🚚 Add ₹<span className="amount-bold">{amountNeeded}</span> to save
+            ₹<span className="save-bold">{nextTier.save}</span> on delivery
           </p>
           <div className="tier-progress">
             <div className="progress-bar">
@@ -36,7 +36,8 @@ function Cart() {
               ></div>
             </div>
             <p className="progress-text">
-              Shop for ₹{nextTier.amount} {nextTier.free ? "(FREE delivery)" : ""}
+              Shop for ₹{nextTier.amount}{" "}
+              {nextTier.free ? "(FREE delivery)" : ""}
             </p>
           </div>
         </div>
@@ -70,10 +71,7 @@ function Cart() {
                         <button
                           className="qty-btn"
                           onClick={() =>
-                            updateQuantity(
-                              item.id,
-                              item.quantityInCart - 1
-                            )
+                            updateQuantity(item.id, item.quantityInCart - 1)
                           }
                         >
                           −
@@ -82,10 +80,7 @@ function Cart() {
                         <button
                           className="qty-btn"
                           onClick={() =>
-                            updateQuantity(
-                              item.id,
-                              item.quantityInCart + 1
-                            )
+                            updateQuantity(item.id, item.quantityInCart + 1)
                           }
                         >
                           +
@@ -98,7 +93,7 @@ function Cart() {
                     onClick={() => removeFromCart(item.id)}
                     title="Remove from cart"
                   >
-                    ✕
+                    DELETE
                   </button>
                 </div>
               ))}
@@ -146,7 +141,9 @@ function Cart() {
 
               <div className="summary-row total-row">
                 <span className="summary-label total-label">Total Payable</span>
-                <span className="summary-value total-value">₹{totalAmount}</span>
+                <span className="summary-value total-value">
+                  ₹{totalAmount}
+                </span>
               </div>
             </div>
 
@@ -157,9 +154,7 @@ function Cart() {
               <div className="payment-offer">
                 <div className="offer-icon">🎁</div>
                 <div className="offer-text">
-                  <p className="offer-main">
-                    Add item worth ₹438.62 and get
-                  </p>
+                  <p className="offer-main">Add item worth ₹438.62 and get</p>
                   <p className="offer-highlight">Free Delivery</p>
                 </div>
               </div>

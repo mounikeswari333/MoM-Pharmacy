@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Chatbot from "../../components/Chatbot";
 import ProductCard from "../../components/ProductCard";
 import medicines from "../../data/medicines.json";
 import "./Home.css";
@@ -150,8 +149,6 @@ function Home() {
           </div>
         </section>
       )}
-
-      <Chatbot />
     </div>
   );
 }

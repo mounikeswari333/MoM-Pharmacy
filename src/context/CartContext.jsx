@@ -53,10 +53,7 @@ function CartProvider({ children }) {
     }
   };
 
-  const totalItems = useMemo(
-    () => cartItems.reduce((sum, item) => sum + item.quantityInCart, 0),
-    [cartItems],
-  );
+  const totalItems = useMemo(() => cartItems.length, [cartItems]);
 
   const subtotal = useMemo(
     () =>
